@@ -1,4 +1,57 @@
 /*
  *= require medium-editor
  *= require medium-editor-theme-flat
+ *= require scrivito_customer_icons
+ *= require_self
  */
+
+.medium-editor-toolbar {
+  background-color: rgba(67, 148, 57, 0.9);
+  z-index: 200000;
+}
+
+.medium-toolbar-arrow-over:after,
+.medium-toolbar-arrow-under:after {
+  border-color: rgba(67, 148, 57, 0.9) transparent transparent transparent;
+}
+
+.medium-editor-toolbar .scrivito_customer_icon {
+  color: #fff!important;
+  font-size: 18px;
+}
+
+.medium-editor-toobar-close:focus,
+.medium-editor-toobar-close:hover,
+.medium-editor-toobar-save:focus,
+.medium-editor-toobar-save:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.medium-toolbar-arrow-under:after {
+  top: 30px;
+}
+
+.medium-editor-toolbar li button {
+  min-width: 30px;
+  height: 30px;
+  color: #fff!important;
+}
+
+.medium-editor-toolbar li button * {
+  color: #fff!important;
+}
+
+.medium-editor-toolbar li button,
+.medium-editor-anchor-preview li button {
+  padding: 0;
+}
+
+.medium-editor-toolbar-form .medium-editor-toolbar-input {
+  height: 30px;
+  background-color: rgba(67, 148, 57, 0.9);
+}
+
+.medium-editor-toolbar-form a {
+  font-size: 18px;
+}
