@@ -1,4 +1,5 @@
 /*
- *= require medium-editor
- *= require medium-editor-theme-flat
+ *= require medium-editor/medium-editor
+ *= require medium-editor/themes/default
+ *= require scrivito-medium-editor-patches
  */
