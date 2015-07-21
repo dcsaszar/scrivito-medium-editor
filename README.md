@@ -32,10 +32,19 @@ Set the MediumEditor as the [in-place editor](https://scrivito.com/scrivito/edit
 <%= scrivito_tag :div, @obj, :body, data: {editor: :medium} %>
 ```
 
-You can also override the [configuration](https://github.com/daviferreira/medium-editor#initialization-options) of the MediumEditor:
+You can also override the [configuration](https://github.com/yabwe/medium-editor#mediumeditor-options) of the MediumEditor:
 ```erb
 <%= scrivito_tag :div, @obj, :body, data: {editor: :medium,
-  medium_editor: {buttons: %w[bold italic underline]}} %>
+  medium_editor: {toolbar: {buttons: %w[bold italic underline]}}} %>
+```
+
+You can set global options using JavaScript:
+```js
+scrivito.editors.html_editor.medium.options = {
+  toolbar: {
+    buttons: ["bold", "italic", "underline"]
+  }
+};
 ```
 
 ## Contributing
